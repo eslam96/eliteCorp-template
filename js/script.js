@@ -14,3 +14,12 @@ $(function(){
     });
 
 });
+
+
+$(function(){
+    $(".feature-area li").click(function(){
+    
+        $($(this).data("class")).fadeIn();
+        $(".portfolio-items").find(".item").not(($(this).data("class"))).fadeOut();
+    });
+})
