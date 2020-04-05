@@ -26,7 +26,7 @@ body{
     transition: all 0.3s ease-in-out;
 }
 .upper-bar span a i{
-   padding: 5px 2px; 
+   padding: 5px; 
 }
 .upper-bar .fa-envelope{
     margin-left: 7px;
@@ -174,6 +174,7 @@ body{
 }
 .overview .row{
     text-align: center;
+    margin: 0;
 }
 .overview .col-md-8{
     margin: 0 auto;
@@ -680,7 +681,6 @@ footer .col-mid h4{
     letter-spacing: 1px;
     margin: 5px 0 25px;
     border-bottom: 1px solid #555;
-    width: 85%;
     padding-bottom: 5px;
 }
 footer .col-mid ul{
@@ -752,3 +752,84 @@ text-align: right;
 }
 
 /* footer styles end */
+
+
+/* media queries styles */
+
+@media screen and (max-width : 1200px){
+
+    .inner-header{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width : 1000px){
+
+    .inner-header{
+        font-size: 50px;
+        margin-left: 150px;
+    }
+
+    .testimonial .carousel-inner{
+        padding: 150px 50px;
+    }
+}
+
+@media screen and (max-width : 830px){
+
+    .inner-header{
+        font-size: 45px;
+        margin-left: 110px;
+    }
+}
+
+@media screen and (max-width : 700px){
+
+    .inner-header{
+        font-size: 35px;
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width : 768px){
+    
+    .upper-bar span{
+        display: inline-block;
+        margin-bottom: 5px;   
+    }
+    .upper-bar .fa-envelope{
+        margin: 0;
+    }
+
+    .upper-bar .bar-btn{
+        padding: 5px 33px;
+    }
+
+    .testimonial .carousel-inner{
+        padding: 150px 20px;
+    }
+    footer .left-links-col, footer .right-links-col{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media screen and (max-width : 575px){
+
+    .upper-bar .second-col{
+        text-align: left;
+    }
+    .navbar{
+        padding: 10px ;
+    }
+
+    .blog-row .col{
+        flex-basis: unset;
+    }
+
+    .testimonial .carousel-inner{
+        padding: 150px 60px;
+    }
+
+}
